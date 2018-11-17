@@ -30,7 +30,8 @@ common_data = {
     'tags': None, # [tag, tag, tag, ..] or {ns:[tag, tag, tag, ...]}
     'pub_date': None, # DateTime object or Arrow object
     'language': None,
-    'urls': None # [url, ...]
+    'urls': None, # [url, ...]
+    'rating': None
 }
 
 plugin_config = {

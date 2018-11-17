@@ -143,6 +143,11 @@ def apply_metadata(data, gallery):
         log.debug("applied urls")
         applied = True
 
+    if data.get('rating'):
+        gallery.update("rating",  data['rating'])
+        log.debug("applied rating")
+        applied = True
+
     return applied
     
 @hpx.subscribe("init")

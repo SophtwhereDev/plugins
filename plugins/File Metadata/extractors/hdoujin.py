@@ -91,6 +91,10 @@ class HDoujin(common.Extractor):
             if msource:
                 d.setdefault('urls', []).append(msource)
 
+            mrating = filedata.get('rating')
+            if mrating != None:
+                d['rating'] = mrating
+
         return d
 
 common.register_extractor(HDoujin, common.DataType.hdoujin)
